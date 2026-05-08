@@ -89,4 +89,4 @@ We may update this policy. The updated version will include a new effective date
 
 ## Contact
 
-For privacy questions, contact: [`support@osdev.app`](http://omransoliman.vercel.app)
+For privacy questions, contact: [`website`](http://omransoliman.vercel.app)
