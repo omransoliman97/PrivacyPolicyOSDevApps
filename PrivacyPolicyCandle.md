@@ -81,7 +81,3 @@ If you have questions about this Privacy Policy or how Candle handles data, plea
 
 **osdev**
 Email: `omransoliman.tech@gmail.com`
-
-
-
-*This document is provided as a general-purpose privacy policy template appropriate for an app of this type and is not a substitute for legal advice. Depending on where your users are located and how your app evolves, you may want to have it reviewed by a legal professional before publishing, particularly regarding GDPR/UK-GDPR, CCPA, and Google Play's Data Safety and Families Policy requirements if applicable.*
