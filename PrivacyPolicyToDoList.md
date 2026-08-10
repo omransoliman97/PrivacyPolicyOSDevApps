@@ -52,4 +52,4 @@ We may update this Privacy Policy from time to time, for example to reflect new 
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-**omransoliman.tech@gmail.com**
+**omransoliman.osdevapps@gmail.com**
