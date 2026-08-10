@@ -8,8 +8,6 @@ The App is designed with privacy in mind: there is no user account or sign-in, a
 
 If you have questions about this policy, contact us at **[omransoliman.osdevapps@gmail.com]**.
 
-> **Note to the developer:** this document was drafted to be thorough and protective, but it is not a substitute for advice from a qualified attorney. Privacy law varies by where your users are located (for example the EU's GDPR, California's CCPA/CPRA, and similar laws elsewhere often require specific disclosures and user rights that can't simply be waived away). Have this reviewed by a lawyer licensed where you operate before you rely on it, and update the bracketed placeholders (contact email, developer/company name, governing-law jurisdiction, and the date) before publishing.
-
 ---
 
 ## 1. Eligibility and Acceptance
