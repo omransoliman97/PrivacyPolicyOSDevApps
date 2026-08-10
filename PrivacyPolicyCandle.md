@@ -80,4 +80,4 @@ We may update this Privacy Policy from time to time, for example to reflect chan
 If you have questions about this Privacy Policy or how Candle handles data, please contact:
 
 **osdev**
-Email: `omransoliman.tech@gmail.com`
+Email: `omransoliman.osdevapps@gmail.com`
