@@ -1,6 +1,6 @@
 # Privacy Policy — Period Tracker
 
-**Last updated:** August 7, 2026
+**Last updated:** August 10, 2026
 **Developer:** OSDev
 **Contact:** [omransoliman.osdevapps@gmail.com]
 
