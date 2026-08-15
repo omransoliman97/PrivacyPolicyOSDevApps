@@ -4,7 +4,6 @@
 **Developer:** OSDev — Omran Soliman
 **Contact:** omransoliman.osdevapps@gmail.com
 
-> Editorial notes for you, not for the public copy: replace the two bracketed placeholders above. The "Advertising" section (§5) describes AdMob, which isn't wired into the app yet — if you publish the very first version ad-free, you can delete that section until ads actually go live, then add it back. Everything else below reflects the app as specified.
 
 ---
 
