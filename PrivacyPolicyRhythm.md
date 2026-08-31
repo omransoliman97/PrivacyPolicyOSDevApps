@@ -1,20 +1,17 @@
 # Privacy Policy for Rhythm
 
-**Last updated:** [August 7, 2026]
+**Last updated:** August 31, 2026
 
 This policy explains what data Rhythm collects, how it's used, and what
-choices you have. Rhythm is built to keep your data on your own device
+choices you have. Rhythm is built to keep your data on your own devices
 by default — the sections below explain exactly where the exceptions to
 that are.
 
-> Fill in the bracketed placeholders below (contact email, developer
-> name, effective date) before publishing this policy.
 
 ## 1. Who this policy covers
 
-Rhythm is developed by **[Developer name / "osdev"]**. This policy
-applies to the Rhythm app on Android and iOS, and to the local web
-dashboard the app can optionally host (see Section 4).
+Rhythm is developed by **OSDev**. This policy applies to the Rhythm app
+everywhere it's offered — Android, iOS, macOS, Windows, and Linux.
 
 ## 2. Data stored on your device
 
@@ -25,57 +22,72 @@ history, the following is stored **locally on your device only**:
 - Your session/timer history (start and end times, durations, notes you
   add)
 - App settings and preferences (theme, accent color, activity labels,
-  quick-start choices, Timer View style, local server settings)
+  quick-start choices, Timer View style)
+- If you use the pairing feature (Section 4): the encryption keys and
+  names of the specific devices you've approved, so Rhythm can
+  recognize them again
 
 This data is not collected by us, is not sent to our servers (we don't
 operate any), and is not shared with third parties, except as described
-in Section 5 (advertising) and Section 4 (the optional local dashboard).
-There is no user account, sign-up, or login — Rhythm doesn't know who
-you are.
+in Section 5 (advertising) and Section 4 (device pairing/sync). There is
+no user account, sign-up, or login — Rhythm doesn't know who you are.
 
 Uninstalling the app removes this data from your device (subject to
 your device's normal backup behavior — see Section 6).
 
 ## 3. Data we do not collect
 
-We do not collect your name, email address, location, contacts, photos,
-or any other personal information, and Rhythm does not require an
-internet connection to track your time.
+We do not collect your name, email address, location, contacts, or
+photos. Rhythm does not require an internet connection to track your
+time. The one exception is camera access: if you use device pairing
+(Section 4), the camera is used live, on-device, to read a QR code —
+no photo or video is captured, stored, or transmitted, by Rhythm or
+anyone else.
 
-## 4. The optional local (LAN) dashboard
+## 4. Device pairing and cross-device sync
 
-Rhythm includes an optional feature that runs a small web server on
-your device, reachable only from other devices on the **same local
-Wi-Fi network** (for example, a laptop or tablet at home) — it is never
-reachable over the public internet. This feature is off by default and
-only starts when you turn it on.
+Rhythm lets you connect two or more of your own devices — for example
+a phone and a desktop — so your activities, sessions, and settings stay
+the same across them. This is optional and off until you set it up.
 
-While it's running:
+**How pairing works:** the desktop app shows a QR code; a phone scans
+it with the camera (Section 3), over your local Wi-Fi network. This
+exchanges a unique encryption key directly between the two devices — it
+does not pass through, or get seen by, any server we operate. Once
+paired, each device stores the other's key and name so it can recognize
+that specific device again. A phone never shows a code of its own and
+is never independently reachable on the network — it only connects out
+to a paired desktop, the same direction any sync or unlock action from
+it takes.
 
-- Anyone on the same local network who has the address (an IP address
-  or a `<name>.local` hostname you can customize) can view your
-  activities, sessions, and settings, and start, pause, resume, or stop
-  timers, using a browser — no separate account or app install is
-  needed on that device.
-- This traffic stays on your local network; it is not relayed through
-  any server we operate.
-- Multiple devices with Rhythm installed can each host and use this
-  feature independently. Data is not automatically merged or shared
-  between separate installations of the app on different devices.
+**How sync works:** while two paired devices are reachable on the same
+local network, changes to activities, sessions, and settings are
+exchanged directly between them and encrypted in transit, so a change
+made on one shows up on the other. This same connection is also how a
+paired phone can lock or unlock a paired desktop, or extend a
+desktop's unlock period by watching a rewarded ad instead — see
+Section 5 for what that involves.
 
-We recommend only enabling this on networks you trust (e.g. not a
-public/shared Wi-Fi network), since anyone else on that same network
-with the address could reach the dashboard while it's running.
+**Your control:** you choose which devices to pair by scanning a code
+yourself, and you can remove a paired device at any time from within
+the app, which stops it from syncing or unlocking further. Pairing and
+sync only work over your local network — they don't work over the
+internet or across networks.
 
 ## 5. Advertising
 
-Rhythm shows banner ads served by **Google AdMob**, on both Android and
-iOS. This is how the app is able to remain free.
+Rhythm shows ads served by **Google AdMob** on Android and iOS: banner
+ads shown while using the app, and an optional rewarded ad a paired
+phone can choose to watch to extend a paired desktop's unlock period by
+a number of days (Section 4). Watching a rewarded ad is always a choice
+— a desktop still unlocks the ordinary way, a paired phone tapping
+Unlock, with no ad involved, and nothing in the app requires watching
+one.
 
-To serve ads, Google's Mobile Ads SDK may collect and process
-information such as your device's advertising identifier, general
-device information, and app usage/interaction data, in accordance with
-[Google's Privacy Policy](https://policies.google.com/privacy) and
+To serve either kind of ad, Google's Mobile Ads SDK may collect and
+process information such as your device's advertising identifier,
+general device information, and app usage/interaction data, in
+accordance with [Google's Privacy Policy](https://policies.google.com/privacy) and
 [How Google uses information from sites or apps that use our
 services](https://policies.google.com/technologies/partner-sites).
 Depending on your region and settings, this may include
@@ -85,7 +97,11 @@ Personalization" on Android, or "Limit Ad Tracking"/App Tracking
 Transparency permissions on iOS).
 
 Rhythm's own activity, session, and note data (Section 2) is never
-shared with or used by the advertising SDK for ad targeting.
+shared with or used by the advertising SDK for ad targeting, for either
+kind of ad. Ads are not shown on macOS, Windows, or Linux builds — the
+Mobile Ads SDK doesn't run on desktop, so the rewarded-ad unlock option
+is only ever available from a paired phone, never from the desktop
+itself.
 
 ## 6. Third-party services
 
@@ -95,45 +111,58 @@ shared with or used by the advertising SDK for ad targeting.
   Rhythm's local data may be included in that backup under your
   platform's own backup and account settings, outside of our control.
 
-Rhythm does not use any analytics, crash-reporting, or user-tracking
-SDKs beyond what's described above.
+Rhythm does not use any analytics or crash-reporting SDKs, and does not
+use any third-party service for device pairing or sync (Section 4) —
+that connection is directly between your own devices.
 
 ## 7. Permissions Rhythm requests
 
 **Android:**
-- **Internet / network state / Wi-Fi state** — to load ads and to run
-  the optional local dashboard (Section 4).
-- **Wi-Fi multicast** — used only while the local dashboard is running,
-  so other devices on your network can find it by name (`<name>.local`)
-  instead of typing an IP address.
-- **Foreground service** — used only while the local dashboard is
-  running, so it can keep working reliably while you're using other
-  apps.
-- **Notifications** — used to show the status of the local dashboard
-  while it's running (e.g. that it's active), not for marketing or
-  promotional messages.
+- **Camera** — used only to scan another device's pairing QR code
+  (Section 4). Not used anywhere else in the app.
+- **Internet / network state / Wi-Fi state** — to load ads and for
+  device pairing/sync (Section 4).
+- **Local network device discovery** — used only while pairing or
+  syncing is active, so a paired device can be found again on the
+  network after its address changes, instead of needing to be re-paired.
 
 **iOS:**
-- **Local Network** — used only while the local dashboard is running, so
-  it can be reached by other devices on the same Wi-Fi network.
+- **Camera** — same use as Android, above.
+- **Local Network** — used only while device pairing/sync is active, so
+  your phone can find and reach a paired desktop on the same Wi-Fi
+  network.
 
-Rhythm does not request access to your contacts, photos, camera,
-microphone, or precise location on either platform.
+**macOS, Windows, and Linux (desktop):**
+- **Camera** — same use as above (used only on machines with a built-in
+  or connected camera, for showing/verifying a pairing code).
+- **Local network (incoming and outgoing connections)** — the desktop
+  app is the side a paired phone connects to, so it listens for those
+  connections on your local network; on Windows/Linux this may surface
+  as a one-time firewall prompt to allow Rhythm to accept them.
+- **Keychain access (macOS only)** — used to store the encryption keys
+  for paired devices (Section 4) using the operating system's own
+  secure storage.
+
+Rhythm does not request access to your contacts, photos, microphone, or
+precise location on any platform.
 
 ## 8. Data retention and deletion
 
-Since your activity/session data lives only on your device, you're
+Since your activity/session data lives only on your own device(s), you're
 always in control of it:
 
 - Delete individual sessions or activities from within the app at any
-  time.
-- Uninstalling the app removes its local data from your device (subject
-  to Section 6).
+  time — if that device is paired and syncing (Section 4), the deletion
+  syncs to your other paired devices too.
+- Remove a paired device at any time to stop it from syncing further
+  (Section 4).
+- Uninstalling the app removes its local data from that device (subject
+  to Section 6's note on backups).
 
 Because there's no account or server-side copy of your data, there's
 nothing for us to delete on request — the data simply isn't anywhere
-but your device (and any device backups you've configured, per Section
-6).
+but your own device(s) (and any device backups you've configured, per
+Section 6).
 
 ## 9. Children's privacy
 
@@ -152,4 +181,4 @@ features change). Material changes will be reflected by updating the
 ## 11. Contact
 
 Questions about this policy or Rhythm's data practices can be sent to:
-**[omransoliman.osdevapps@gmail.com]**
+omransoliman.osdevapps@gmail.com
