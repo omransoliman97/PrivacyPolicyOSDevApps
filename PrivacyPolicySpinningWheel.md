@@ -1,12 +1,12 @@
-# Privacy Policy — Spinning Wheel
+# Privacy Policy — Wheel
 
-**Last updated:** August 16, 2026
+**Last updated:** August 31, 2026
 
 This Privacy Policy describes how the Wheel mobile application ("Wheel," "the App," "we," "us") handles information when you use it. Wheel is developed by OSDev ("we," "us," "our").
 
 ## Summary
 
-Wheel is designed to work entirely on your device. Your wheels, slices, and settings are stored locally on your phone or tablet and are never sent to us or to any server we control. We do not require an account, and we do not collect your name, email address, or any other personal information to use the App. The only outside data flow in the App comes from the third-party advertising service (Google AdMob) used to show the banner ad, described below.
+Wheel is designed to work entirely on your device. Your wheels, slices, and settings are stored locally on your phone or tablet and are never sent to us or to any server we control. We do not require an account, and we do not collect your name, email address, or any other personal information to use the App. The only outside data flow in the App comes from the third-party advertising service (Google AdMob) used to show ads, described below.
 
 ## Information Stored on Your Device
 
@@ -23,7 +23,7 @@ The App includes an optional feature to export your wheels to a file and import 
 
 ## Advertising
 
-The App displays a banner advertisement, served through **Google AdMob**. To do this, Google AdMob's SDK may collect and process technical and advertising information — such as your device's advertising identifier, general device information, and approximate location derived from your IP address — in order to serve and measure ads. On iOS, the App requests your permission via Apple's App Tracking Transparency framework before any data is used for personalized advertising; you can allow or deny this at any time in your device's system settings. On Android, you can manage ad personalization through your Google account's ad settings.
+The App displays advertisements served through **Google AdMob**: a banner ad on the Home screen, and an occasional full-screen (interstitial) ad shown at natural points such as after creating a new wheel. To do this, Google AdMob's SDK may collect and process technical and advertising information — such as your device's advertising identifier, general device information, and approximate location derived from your IP address — in order to serve and measure ads. On iOS, the App requests your permission via Apple's App Tracking Transparency framework before any data is used for personalized advertising; you can allow or deny this at any time in your device's system settings. On Android, you can manage ad personalization through your Google account's ad settings.
 
 This processing is governed by Google's own privacy policy, available at:
 `https://policies.google.com/privacy`
@@ -57,7 +57,3 @@ We may update this Privacy Policy from time to time, for example if the App's fe
 If you have questions about this Privacy Policy or how the App works, contact us at:
 
 omransoliman.osdevapps@gmail.com
-
----
-
-*This document is provided as a starting point and has not been reviewed by a lawyer. Before publishing, confirm it accurately reflects the App's final behavior (especially around AdMob configuration and any features added after this spec) and that it satisfies the requirements of the regions and stores you're publishing to (e.g. Google Play's Data Safety section, Apple's App Privacy details, GDPR/CCPA if applicable).*
