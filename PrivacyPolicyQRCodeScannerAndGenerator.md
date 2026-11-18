@@ -1,6 +1,6 @@
 # Privacy Policy — QR Code
 
-**Effective date:** November 5, 2026
+**Effective date:** November 12, 2026
 **Developer:** OSDev
 
 
@@ -22,19 +22,23 @@ QR Code ("the app") is a QR code scanner and generator for iPhone, iPad, and And
 
 **Location (Android only).** On Android, tapping "Use Current Network" while creating a Wi-Fi code reads the name (SSID) of the Wi-Fi network your device is currently connected to. Android classifies that as location-adjacent data, so reading it requires location permission, even though the app does not otherwise use, store, or have any interest in your actual location. No location coordinates are ever read, stored, or transmitted. The iPhone and iPad versions of the app do not offer this button and never ask for your location.
 
+**Usage analytics.** To understand, in aggregate, how the app is used and to improve it, the app uses Google's Firebase Analytics. It records simple events: that the app was opened, and that a code was scanned, created, shared, or saved, together with the type of code (for example link, text, or Wi-Fi). It never records what a code says, and nothing you type, scan, or pick. Firebase Analytics also receives a randomly generated identifier for this installation of the app, basic device and app details (such as the device model, operating system and app version, and language), an approximate region derived from your IP address, and, where your device allows it, your advertising identifier. We cannot tell who you are from any of this, because we never have your name or any account. Where the law requires your consent (the EEA, UK, and Switzerland), nothing is measured until you have made your choice in the consent message described in §5 and agreed; elsewhere it is on by default. More about what Google collects: https://firebase.google.com/support/privacy.
+
+**Notifications.** To be able to deliver notifications, the app uses Google's Firebase Cloud Messaging. Google's service creates a push token and a Firebase installation identifier for your device (on iPhone and iPad together with a token from Apple's Push Notification service), and the app shares them with Firebase. We use this only to send you occasional news and updates about the app, and a notification appears only if you allow it: your device asks for permission once, and you can switch notifications off at any time in Settings → Notifications in the app or in your device's settings. Turning them off in the app also unregisters your device from the service.
+
 **No account.** The app doesn't require sign-up or a login, and doesn't collect your name, email, or any personal profile information itself.
 
 ## 3. How We Use Information
 
-Solely to run the app's core functionality: storing your scan and creation history on-device, and displaying it back to you. Export and Import are entirely user-initiated — your data leaves the device, or gets read back in, only when you explicitly choose to do so.
+Solely to run the app's core functionality: storing your scan and creation history on-device, and displaying it back to you. Export and Import are entirely user-initiated — your data leaves the device, or gets read back in, only when you explicitly choose to do so. Beyond that, we use the information described in §2 only to show ads (§5), to understand and improve how the app is used, and, if you allow them, to send you notifications about the app.
 
 ## 4. Data Storage & Retention
 
-All app data is stored locally on your device. It's removed when you delete an individual item, use "Delete All Data" in Settings, or uninstall the app. We do not operate a server that stores your scanned or created codes. Like other app data, it may be included in your device's own backups (for example iCloud Backup on iPhone and iPad, or Google's backup on Android) if you have those turned on; we have no access to those backups.
+All app data is stored locally on your device. It's removed when you delete an individual item, use "Delete All Data" in Settings, or uninstall the app. We do not operate a server that stores your scanned or created codes. Like other app data, it may be included in your device's own backups (for example iCloud Backup on iPhone and iPad, or Google's backup on Android) if you have those turned on; we have no access to those backups. Analytics data and notification tokens are held by Google on our behalf for a limited time (event-level analytics data for no more than 14 months, a period set in our Firebase account) and are not tied to your name; uninstalling the app stops any new data from being collected.
 
 ## 5. Advertising
 
-The app displays advertisements served by Google AdMob: a banner ad in the reserved strip at the bottom of the screen; a full-screen (interstitial) ad after you scan or create a code, and after you close a saved code you opened from your history; and a full-screen "app open" ad when you open the app or come back to it after being away. To serve and measure ads and to guard against fraud, Google's advertising SDK may collect the following, and handles it in accordance with Google's own privacy policy (https://policies.google.com/privacy):
+The app displays advertisements served by Google AdMob: a banner ad in the reserved strip at the bottom of the screen; a full-screen (interstitial) ad after you scan or create a code, after you close a saved code you opened from your history, and before a Share, Share Code, or Save goes ahead; and a full-screen "app open" ad when you open the app or come back to it after being away. To serve and measure ads and to guard against fraud, Google's advertising SDK may collect the following, and handles it in accordance with Google's own privacy policy (https://policies.google.com/privacy):
 
 - your device's advertising identifier (the IDFA on iOS, the Advertising ID on Android) and other device identifiers;
 - your IP address, which can be used to estimate your approximate — not precise — location;
@@ -49,11 +53,11 @@ We do not share your scanned or created QR content with AdMob or any advertiser 
 
 ## 6. Data Sharing
 
-We do not sell your data, and we do not share the content of your scanned or created QR codes with any third party. The only third-party service involved is Google AdMob (§5), which operates independently of the app's local data. When you use Share or Export, the content goes only to the app or location you choose in your device's share sheet; we never receive it. On Android only, the Settings → "Our Other Apps" link opens our developer page on Google Play in your browser or the Play Store app — no data is exchanged by tapping it.
+We do not sell your data, and we do not share the content of your scanned or created QR codes with any third party. The only third-party services involved are Google AdMob (§5) and Google Firebase, for analytics and notifications (§2), which operate independently of the app's local data. When you use Share or Export, the content goes only to the app or location you choose in your device's share sheet; we never receive it. On Android only, the Settings → "Our Other Apps" link opens our developer page on Google Play in your browser or the Play Store app — no data is exchanged by tapping it.
 
 ## 7. Children's Privacy
 
-The app is not directed at children under 13, and we do not knowingly collect personal information from children. The app itself collects no personal information from anyone; the only data collected is by Google's advertising SDK, as described in §5.
+The app is not directed at children under 13, and we do not knowingly collect personal information from children. The app itself collects no personal information from anyone; the only data collected is by Google's advertising SDK (§5) and Google's Firebase analytics and notifications services (§2).
 
 ## 8. Your Choices
 
@@ -61,7 +65,8 @@ The app is not directed at children under 13, and we do not knowingly collect pe
 - Delete everything at once from Settings → Delete All Data.
 - Export your data at any time from Settings → Export, and bring a previous export back in from Settings → Import.
 - On iOS, allow or decline ad tracking at the App Tracking Transparency prompt, and change that choice anytime in iOS Settings → Privacy & Security → Tracking.
-- If you're in the EEA, UK, or Switzerland, revisit your ad consent choice anytime from Settings → Ad Privacy Options.
+- If you're in the EEA, UK, or Switzerland, revisit your consent choice (which covers ads and usage analytics) anytime from Settings → Ad Privacy Options.
+- Turn notifications on or off at any time in Settings → Notifications, or in your device's system settings.
 - See and manage the ad settings Google keeps for you at https://adssettings.google.com.
 - Camera, Photos, and Contacts permissions (and Location on Android) can each be revoked at any time in your device's system settings; doing so limits the corresponding feature (scanning, scan-from-photo, save-to-photos, contact codes, or the Android "Use Current Network" convenience) but doesn't affect anything already stored on-device.
 
